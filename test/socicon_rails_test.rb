@@ -12,6 +12,8 @@ class SociconTest < ActionDispatch::IntegrationTest
     assert_response :success
     get '/assets/socicon.woff'
     assert_response :success
+    get '/assets/socicon.woff2'
+    assert_response :success
     get '/assets/socicon.ttf'
     assert_response :success
     get '/assets/socicon.svg'
